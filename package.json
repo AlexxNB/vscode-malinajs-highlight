@@ -2,7 +2,7 @@
     "name": "malina-js-highlight",
     "displayName": "Malina.js Syntax Highlighter",
     "description": "Syntax highlightning for Malina.js framework",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "engines": {
         "vscode": "^1.47.0"
     },
@@ -21,21 +21,30 @@
     "homepage": "https://github.com/AlexxNB/vscode-malinajs-highlight#readme",
     "publisher": "AlexxNB",
     "contributes": {
-        "languages": [{
-            "id": "malinajs",
-            "aliases": ["Malina.js", "malinajs"],
-            "extensions": [".ma"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "malinajs",
-            "scopeName": "source.malinajs",
-            "path": "./syntaxes/malinajs.tmLanguage.json",
-            "embeddedLanguages": {
-                "text.html": "xml",
-                "source.css": "css",
-                "source.js": "javascript"
+        "languages": [
+            {
+                "id": "malinajs",
+                "aliases": [
+                    "Malina.js",
+                    "malinajs"
+                ],
+                "extensions": [
+                    ".ma"
+                ],
+                "configuration": "./language-configuration.json"
             }
-        }]
+        ],
+        "grammars": [
+            {
+                "language": "malinajs",
+                "scopeName": "source.malinajs",
+                "path": "./syntaxes/malinajs.tmLanguage.json",
+                "embeddedLanguages": {
+                    "text.html": "xml",
+                    "source.css": "css",
+                    "source.js": "javascript"
+                }
+            }
+        ]
     }
 }
