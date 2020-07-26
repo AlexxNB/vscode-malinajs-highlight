@@ -1,0 +1,35 @@
+{
+    "name": "malina-js-highlight",
+    "displayName": "Malina.js Syntax Highlighter",
+    "description": "",
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "^1.47.0"
+    },
+    "icon": "icons/logo.png",
+    "galleryBanner": {
+        "color": "#333333",
+        "theme": "dark"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "malinajs",
+            "aliases": ["Malina.js", "malinajs"],
+            "extensions": [".ma",".html"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "malinajs",
+            "scopeName": "source.malinajs",
+            "path": "./syntaxes/malinajs.tmLanguage.json",
+            "embeddedLanguages": {
+                "text.html": "xml",
+                "source.css": "css",
+                "source.js": "javascript"
+            }
+        }]
+    }
+}

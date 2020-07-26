@@ -1,2 +1,3 @@
-# vscode-malinajs-highlight
-Malina.js syntax highlighting VSCode extension
+# Malina.JS Syntax Highlight
+
+Syntax highlighting for [Malina.js](https://malinajs.github.io) components.
