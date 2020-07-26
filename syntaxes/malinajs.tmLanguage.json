@@ -151,11 +151,15 @@
 					"include": "#methods"
 				},
 				{
+					"include": "#methods-inline"
+				},
+				{
 					"include": "#keywords"
 				},
 				{
 					"include": "source.js"
 				}
+
 			]
 		},
 
@@ -289,10 +293,15 @@
 		},
 
 		"methods": {
-			"name": "support.class",
-			"match": "\\$:|\\$onMount|\\$onDestroy|\\$emit|\\$props|\\$attributes|\\$element|\\$event"
+			"name": "support.class.malinajs",
+			"match": "\\$:|\\$onMount|\\$onDestroy|\\$emit|\\$props|\\$attributes|\\$option"
 		},
 
+		"methods-inline": {
+			"name": "support.class.malinajs",
+			"match": "\\$element|\\$event"
+		},
+		
 		"keywords": {
 			"name": "keyword.control.malinajs",
 			"match": "([@#:/](?:if|else|each|await|then|catch|html|slot|fragment))(?:(:)([a-zA-Z0-9_]+))?",
