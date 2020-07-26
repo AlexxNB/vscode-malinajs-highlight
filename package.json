@@ -1,7 +1,7 @@
 {
     "name": "malina-js-highlight",
     "displayName": "Malina.js Syntax Highlighter",
-    "description": "",
+    "description": "Syntax highlightning for Malina.js framework",
     "version": "0.1.0",
     "engines": {
         "vscode": "^1.47.0"
@@ -14,11 +14,17 @@
     "categories": [
         "Programming Languages"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AlexxNB/vscode-malinajs-highlight.git"
+    },
+    "homepage": "https://github.com/AlexxNB/vscode-malinajs-highlight#readme",
+    "publisher": "Alexey Schebelev",
     "contributes": {
         "languages": [{
             "id": "malinajs",
             "aliases": ["Malina.js", "malinajs"],
-            "extensions": [".ma",".html"],
+            "extensions": [".ma"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
@@ -30,6 +36,13 @@
                 "source.css": "css",
                 "source.js": "javascript"
             }
-        }]
+        }],
+        "iconThemes": [
+            {
+              "id": "malinajs",
+              "label": "Malina.js",
+              "path": "./icons/malinajs-icon-theme.json"
+            }
+          ]
     }
 }

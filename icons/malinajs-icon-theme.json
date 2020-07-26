@@ -1,0 +1,10 @@
+{
+    "iconDefinitions": {
+      "_malina": {
+        "iconPath": "./malinajs_icon_16x.svg"
+      }
+    },
+    "languageIds": {
+        "malinajs": "_malina"
+     }
+  }
