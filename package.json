@@ -19,7 +19,7 @@
         "url": "https://github.com/AlexxNB/vscode-malinajs-highlight.git"
     },
     "homepage": "https://github.com/AlexxNB/vscode-malinajs-highlight#readme",
-    "publisher": "Alexey Schebelev",
+    "publisher": "AlexxNB",
     "contributes": {
         "languages": [{
             "id": "malinajs",
