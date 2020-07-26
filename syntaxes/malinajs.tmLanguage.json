@@ -43,9 +43,6 @@
                 }
             },"patterns": [
 				{
-					"include": "#methods"
-				},
-				{
 					"include": "source.js"
 				}				
 			]
@@ -113,6 +110,9 @@
 					"include": "#quoted-string"
 				},
 				{
+					"include": "#quoted-string-single"
+				},
+				{
 					"include": "#refs"
 				},
 				{
@@ -148,12 +148,6 @@
 			},
 			"patterns": [
 				{
-					"include": "#methods"
-				},
-				{
-					"include": "#methods-inline"
-				},
-				{
 					"include": "#keywords"
 				},
 				{
@@ -183,6 +177,31 @@
 				{
 					"match": "[^\"]|\\\"",
 					"name": "string.quoted.double.html"
+				}
+			]
+			
+		},
+
+		"quoted-string-single": {
+			"begin": "'",
+			"beginCaptures": {
+                "0": {
+                    "name": "string.quoted.single.html"
+                }
+			},
+			"end": "(?<!\\\\)\\'",
+            "endCaptures": {
+                "0": {
+                    "name": "string.quoted.single.html"
+                }
+			},
+			"patterns": [
+				{
+					"include": "#expression"
+				},
+				{
+					"match": "[^']|\\'",
+					"name": "string.quoted.single.html"
 				}
 			]
 			
