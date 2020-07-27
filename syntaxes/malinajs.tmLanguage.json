@@ -3,6 +3,9 @@
 	"name": "Malina.js",
 	"patterns": [
 		{
+			"include": "#comment"
+		},
+		{
 			"include": "#script"
 		},
 		{
@@ -17,6 +20,21 @@
 
 	],
 	"repository": {
+		"comment": {
+			"name":"comment.block.html",
+			"begin": "<!--",
+			"beginCaptures": {
+                "0": {
+                    "name": "punctuation.definition.comment.html"
+                }
+			},
+			"end": "-->",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.comment.html"
+                }
+			}
+		},
 		"script": {
 			"begin": "(<)(script)[^>]*(>)",
 			"beginCaptures": {
