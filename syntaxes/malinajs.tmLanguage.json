@@ -43,6 +43,9 @@
                 }
             },"patterns": [
 				{
+					"include": "#destiny"
+				},
+				{
 					"include": "source.js"
 				}				
 			]
@@ -309,6 +312,11 @@
 					"name": "punctuation.separator.key-value.html"
 				}
 			}
+		},
+
+		"destiny": {
+			"name": "support.class.malinajs",
+			"match": "^\\s*\\$:"
 		},
 
 		"methods": {
