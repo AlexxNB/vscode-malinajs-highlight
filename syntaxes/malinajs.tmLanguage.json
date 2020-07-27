@@ -18,7 +18,7 @@
 	],
 	"repository": {
 		"script": {
-			"begin": "(<)(script)(>)",
+			"begin": "(<)(script)[^>]*(>)",
 			"beginCaptures": {
                 "1": {
                     "name": "punctuation.definition.tag.begin.html"
@@ -48,7 +48,7 @@
 			]
 		},
 		"style": {
-			"begin": "(<)(style)(\\s.*)*(>)",
+			"begin": "(<)(style)[^>]*(>)",
 			"beginCaptures": {
                 "1": {
                     "name": "punctuation.definition.tag.begin.html"
