@@ -29,6 +29,7 @@
                     "malinajs"
                 ],
                 "extensions": [
+                    ".xht",
                     ".ma"
                 ],
                 "configuration": "./language-configuration.json"
